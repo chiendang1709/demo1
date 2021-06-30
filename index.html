@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài 1</title>
+	 <script type="text/javascript" language="javacript" src="HienNgayHomNay.js"></script>
+</body>
+</head>
+<body>
+	<h1>Chú ý khi tạo HTML</h1>
+	<hn>Nếu bạn dùng cácc chương trình soạn thảo văn bản 
+		<u><b>khác Notpead của Windows</b></u>
+		 thì bạn phải nhớ lưu kết quả ở dạng trơn(ASCII)</hn>
+		 <script type="text/javascript" language="javacript" src="HienNgayHomNay.js">
+		 	var mydate=new Date();
+var year=mydate.getYear();   
+if (year < 1000) year+=1900;
+var day=mydate.getDay();
+var month=mydate.getMonth();
+var daym=mydate.getDate(); 
+if (daym<10) daym="0"+daym;
+var dayarray=new Array("Chủ nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"); 
+var montharray=new Array("-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12");
+document.write(""+dayarray[day]+", Ngày "+daym+" "+montharray[month]+"-"+year+"");
+
+		 </script>
+</body>
+</html>
